@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-carousel {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            /* overflow: hidden; */
+            width: 501%;
+            /* height: 100%; */
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            /* flex-wrap: nowrap; */
+            /* -webkit-box-align: center; */
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            /* align-items: center; */
+            -o-object-fit: fill;
+            /* object-fit: fill; */
+            /* position: absolute; */
+            /* bottom: 63px; */
+            transition: all 0.5s ease-in-out;
+        }
+        .carousel-cell {
+            overflow: visible;
+            width: 456px;
+            padding-right: 1em;
+            padding-left: 1em;
+            height: 100%;
+            -o-object-fit: fill;
+            object-fit: fill;
+            transition: all 0.5s ease-in-out;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+        .active{
+            background-color: red;
+        }
+        .state{
+            position: relative;
+        }
+    .state-info-panel {
+        display: none;
+        width: 100%;
+        max-height: 400px;
+        overflow: auto;
+        margin-top: 32px;
+        padding: 18px 20px;
+        color: #0d1e42;
+        background-color: #fff;
+        box-shadow: 0 8px 20px -12px rgb(9 18 34 / 45%);
+        transition: max-height .1s .3s,opacity .3s;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .state-info-panel .title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .state-info-panel .title-row .state-name {
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .state-info-panel.campaign-map .issue-grid {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .issue-copy {
+        font-family: "GT America Standard",sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.4;
+        color: #182c4f;
+        margin: 0 0 8px;
+    }
+    .campaign-link {
+        display: block;
+        padding: 0.5em 0;
+        position: relative;
+        color: var(--patriot-blue);
+        font-family: "GT America Mono",sans-serif;
+        font-size: 12px;
+        font-size: .75rem;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        text-decoration: none;
+        -webkit-transition: color 200ms ease-in-out;
+        transition: color 200ms ease-in-out;
+    }
+    .campaign-link:hover {
+        color: var(--american-red);
+    }
+    .show{
+        display: block;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="main-carousel" style="width: 1824px;"><div class="carousel-cell"><div class="c-primaries-box active"><img src="https://assets.website-files.com/6245706cacdce256524cbd80/624937464393153e8a3aef76_texas-primaries.jpg" loading="lazy" alt="" class="c-primaries-box__img"><div class="c-primaries-box__info"><h1 class="c-primaries-box__title">Texas</h1><div class="c-primaries-box__row"><div class="text-block">March 1</div><a href="#" class="c-btn c-btn--ghost">Learn more</a></div></div></div></div><div class="carousel-cell"><div class="c-primaries-box"><img src="https://assets.website-files.com/6245706cacdce256524cbd80/624937464393153e8a3aef76_texas-primaries.jpg" loading="lazy" alt="" class="c-primaries-box__img"><div class="c-primaries-box__info"><h1 class="c-primaries-box__title">Texas</h1><div class="c-primaries-box__row"><div class="text-block">March 1</div><a href="#" class="c-btn c-btn--ghost">Learn more</a></div></div></div></div><div class="carousel-cell"><div class="c-primaries-box"><img src="https://assets.website-files.com/6245706cacdce256524cbd80/624937464393153e8a3aef76_texas-primaries.jpg" loading="lazy" alt="" class="c-primaries-box__img"><div class="c-primaries-box__info"><h1 class="c-primaries-box__title">Texas</h1><div class="c-primaries-box__row"><div class="text-block">March 1</div><a href="#" class="c-btn c-btn--ghost">Learn more</a></div></div></div></div><div class="carousel-cell"><div class="c-primaries-box"><img src="https://assets.website-files.com/6245706cacdce256524cbd80/624937464393153e8a3aef76_texas-primaries.jpg" loading="lazy" alt="" class="c-primaries-box__img"><div class="c-primaries-box__info"><h1 class="c-primaries-box__title">Texas</h1><div class="c-primaries-box__row"><div class="text-block">March 1</div><a href="#" class="c-btn c-btn--ghost">Learn more</a></div></div></div></div></div>
+    <button class="c-btn c-btn--ghost next">Next</button>
+    <button class="c-btn c-btn--ghost prev" style="right: 50px;">Previous</button>
+    <div data-state="CA" data-issue="Top-Four Nonpartisan Primary" style=" position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 147.788 253.546" class="state">
+            <path id="california" d="M120.628,403.359l-20.9-2.867L89.118,398.9l-.53-1.91v-9.981l-.318-3.4-2.759-4.46-.848-2.441-4.138-4.46-3.077-4.99-2.864-.212-3.395-.85-.318-1.061,1.59-.637-.636-3.4-1.591-2.23-5.093-.849L61,355.792l-1.167-2.442-2.759-5.1L54,344.962H50.925l-4.138-2.23-4.774-1.91-4.456-.531-2.546-2.867.53-2.017,1.91-7.539.849-2.017V323.3l-1.7-1.062-.53-3.08L34.48,316.4l-3.607-6.158-1.379-3.291-1.591-4.99-1.7-5.628-3.4-4.671-.53-3.08.848-4.14h1.167l2.228-1.7,1.167-3.821-1.06-2.867-2.865-.531-2.016-2.76-2.228-3.929-.212-8.706.637-2.018.636-2.442.53-2.548-6.047-6.689V244.2l.319-.53.318-3.4-1.38-4.247-2.44-5.1-2.864-4.778-1.91-4.141,1.061-3.929.637-6.158,1.91-3.291.318-6.9L9.867,197.91l-1.7-4.46L5.3,188.991l.848-3.4,1.592-4.46,1.91-.849.318-1.168,3.289-2.76,5.517-12.529.212-7.857,1.793-5.2L61.831,163.3l27.16,7.007L80.5,203.537l-9.2,35.144,13.4,20.386,44.73,66.147,18.141,27.712-.424,3.291,2.97,5.521,1.167,5.734,1.061,1.592.743.637-.212,1.487-1.485,1.061-3.608,1.7-2.015,2.229-1.8,4.14-.53,4.99-2.759,2.655-2.44,1.168-.106,6.583-.637,2.017,1.061,1.8,3.183.319-.424,1.7-1.486,2.123-4.137.637-15.066-.955Zm-78.4-51.92,1.38,1.593-.213,1.38-3.4-.106-.636-1.274-.637-1.593h3.5Zm2.016,0,1.273-.637,3.82,2.23,3.288,1.274-.954.637-4.775-.212-1.7-1.7-.955-1.592ZM66.2,372.462H66.1v-1.274l1.167-.213,2.865,2.124,1.061,1.911-.637,1.593-1.591-.637-.849-1.062-1.91-2.442ZM64.717,381.7l1.91,3.4,1.273,2.017-1.592.212-1.379-1.274a10.318,10.318,0,0,1-.742-2.017V381.7h.53Z" transform="translate(-5.305 -150.768)" fill="#0a715e"/>
+
+        </svg>
+    </div>
+    <div data-state="FA" data-issue="Top-Four Nonpartisan22 Primary" style=" position: relative;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 147.788 253.546" class="state">
+            <path id="california" d="M120.628,403.359l-20.9-2.867L89.118,398.9l-.53-1.91v-9.981l-.318-3.4-2.759-4.46-.848-2.441-4.138-4.46-3.077-4.99-2.864-.212-3.395-.85-.318-1.061,1.59-.637-.636-3.4-1.591-2.23-5.093-.849L61,355.792l-1.167-2.442-2.759-5.1L54,344.962H50.925l-4.138-2.23-4.774-1.91-4.456-.531-2.546-2.867.53-2.017,1.91-7.539.849-2.017V323.3l-1.7-1.062-.53-3.08L34.48,316.4l-3.607-6.158-1.379-3.291-1.591-4.99-1.7-5.628-3.4-4.671-.53-3.08.848-4.14h1.167l2.228-1.7,1.167-3.821-1.06-2.867-2.865-.531-2.016-2.76-2.228-3.929-.212-8.706.637-2.018.636-2.442.53-2.548-6.047-6.689V244.2l.319-.53.318-3.4-1.38-4.247-2.44-5.1-2.864-4.778-1.91-4.141,1.061-3.929.637-6.158,1.91-3.291.318-6.9L9.867,197.91l-1.7-4.46L5.3,188.991l.848-3.4,1.592-4.46,1.91-.849.318-1.168,3.289-2.76,5.517-12.529.212-7.857,1.793-5.2L61.831,163.3l27.16,7.007L80.5,203.537l-9.2,35.144,13.4,20.386,44.73,66.147,18.141,27.712-.424,3.291,2.97,5.521,1.167,5.734,1.061,1.592.743.637-.212,1.487-1.485,1.061-3.608,1.7-2.015,2.229-1.8,4.14-.53,4.99-2.759,2.655-2.44,1.168-.106,6.583-.637,2.017,1.061,1.8,3.183.319-.424,1.7-1.486,2.123-4.137.637-15.066-.955Zm-78.4-51.92,1.38,1.593-.213,1.38-3.4-.106-.636-1.274-.637-1.593h3.5Zm2.016,0,1.273-.637,3.82,2.23,3.288,1.274-.954.637-4.775-.212-1.7-1.7-.955-1.592ZM66.2,372.462H66.1v-1.274l1.167-.213,2.865,2.124,1.061,1.911-.637,1.593-1.591-.637-.849-1.062-1.91-2.442ZM64.717,381.7l1.91,3.4,1.273,2.017-1.592.212-1.379-1.274a10.318,10.318,0,0,1-.742-2.017V381.7h.53Z" transform="translate(-5.305 -150.768)" fill="#0a715e"/>
+            
+        </svg>
+    </div>  
+
+    <script type="text/javascript">
+        const mainCarousel = document.querySelector('.main-carousel');
+        const cells = mainCarousel.querySelectorAll('.carousel-cell');
+        const nextBtn = document.querySelector('.next');
+        const prevBtn = document.querySelector('.prev');
+        const cellCount = cells.length;
+        console.log(cells[0].firstChild);
+        const cellWidth = cells[0].offsetWidth;
+        const carouselWidth = cellWidth * cellCount;
+        mainCarousel.style.width = carouselWidth + 'px';
+        cells[0].firstChild.classList.add('active');
+        const ShownCells = 3;
+        let currentPosition = 0;
+        let currentCell = 0;
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', previous);
+        function next() {
+          
+            if(cellCount - currentPosition >  ShownCells) {
+                prevBtn.classList.remove('is-disabled');
+                currentPosition = currentPosition + 1;
+                mainCarousel.style.transform = 'translateX(-' + currentPosition * cellWidth + 'px)';
+                cells[currentPosition].firstChild.classList.add('active');
+                cells[currentPosition - 1].firstChild.classList.remove('active');
+            }
+            else{
+                this.classList.add('is-disabled');
+            }
+           
+           
+        }
+        function previous() {
+            if(cellCount - currentPosition >=  ShownCells && currentPosition > 0) {
+                nextBtn.classList.remove('is-disabled');
+                currentPosition = currentPosition - 1;
+                mainCarousel.style.transform = 'translateX(' + currentPosition * cellWidth + 'px)';
+                cells[currentPosition].firstChild.classList.add('active');
+                cells[currentPosition + 1].firstChild.classList.remove('active');
+            } 
+            else{
+                this.classList.add('is-disabled');
+            }
+           
+        }
+
+
+
+
+        // 
+        const states = document.querySelectorAll('.state');
+        states.forEach(state=>{
+            state.addEventListener('mouseenter', function(){
+                const stateName = this.parentElement.getAttribute('data-name');
+                const issueCopy = this.parentElement.getAttribute('data-issue');
+                
+                
+                const stateInfo = document.createElement('div');
+                stateInfo.classList.add('state-info-panel');
+                stateInfo.classList.add('show');
+                stateInfo.innerHTML = `
+                <h5 class="state-name">${stateName}</h5>
+                <div class="issue-grid">
+                    <p class="issue-copy">${issueCopy}</p>
+                </div>
+                <a class="campaign-link link-map" href="https://www.uniteamerica.org/strategy/nonpartisan-primaries" target="_blank">Learn More</a>
+                `
+                this.parentElement.appendChild(stateInfo);
+                
+                
+            })
+            state.addEventListener('mouseleave', function(){
+                    const stateInfo = this.parentElement.querySelector('.state-info-panel');
+                    stateInfo.remove();
+            })
+        })
+    </script>
+</body>
+</html>

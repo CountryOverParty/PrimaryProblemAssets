@@ -1,15 +1,4 @@
-<div id="ua-map" data-hover="#0A715E" data-fill="#0A715E" data-is-campaign="true">
-
-    <!-- To make a single-issue map, just add a "data-issue" attribute to #us-map element, with the value equal to label in spreadsheets. e.g. data-issue="vote_by_mail"  -->
-    <main id="ua-map-main">
-    
-        <div class="map-loader">
-          <div class="map-loader-copy">
-            Map Loading
-          </div>
-        </div>
-      
-        <svg id="map-full" width="975" height="619" viewBox="0 0 975 619" xmlns="http://www.w3.org/2000/svg" style="--hover-color:#0A715E">
+<svg id="map-full" width="975" height="619" viewBox="0 0 975 619" xmlns="http://www.w3.org/2000/svg" style="--hover-color:#0A715E">
           <g id="Design" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd">
             <g id="Map" transform="translate(-198 -169)" fill="#FFF" fill-rule="nonzero">
               <g id="Group-33" transform="translate(198 169)">
@@ -127,35 +116,3 @@
             <path class="state" id="wyoming" d="M364.962 165.527l-1.591 26.968-4.669 46.717-2.864-.318-88.376-9.662-29.6-3.186 2.122-12.74 7.32-43.532 4.032-25.695 1.379-11.891 51.137 7.432 62.701 6.901z"></path>
           </g>
         </svg>
-      
-      
-        <aside class="state-info-panel campaign-map hide" style="transform: translate(196.114px, 381.221px);">
-          <div class="title-row">
-            <h5 class="state-name">arizona</h5>
-            <div class="state-grade text-sans text-red hide">
-              B+
-            </div>
-          </div>
-          <div class="issue-grid">
-        <div class="issue-grid-item">
-          <div class="issue-name text-sans text-bold"></div>
-          <p class="issue-copy">No active campaigns.</p>
-        </div>
-      </div>
-          <div class="state-title">Nonpartisan Primaries</div>
-      
-          <div class="cities-list hide">
-            <div class="cities-list-title text-sans text-red">Cities with RCV</div>
-            <div class="cities-list-item">
-              Denver, Boulder, Golden
-            </div>
-          </div>
-      
-          <div class="campaign-list hide">
-            <div class="campaign-list-title text-sans text-red">Learn More</div>
-            <div class="campaign-list-links"><a class="campaign-link link-map" href="https://www.uniteamerica.org/strategy/nonpartisan-primaries" target="_blank">Learn More</a></div>
-          </div>
-        </aside>
-      
-      </main>
-      </div>
