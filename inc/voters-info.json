@@ -1,0 +1,109 @@
+{
+    "votersTableData": [
+        {
+            "state": "Alabama",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Alaska",
+            "primaryType": "Open(Top-Four)",
+            "primaryDate": "Aug 16th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arkansas",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arizona",
+            "primaryType": "Semi-closed",
+            "primaryDate": "April 4",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "California",
+            "primaryType": "Open",
+            "primaryDate": "June 7th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Alabama",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Alaska",
+            "primaryType": "Open(Top-Four)",
+            "primaryDate": "Aug 16th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arkansas",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arizona",
+            "primaryType": "Semi-closed",
+            "primaryDate": "April 4",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "California",
+            "primaryType": "Open",
+            "primaryDate": "June 7th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Alabama",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Alaska",
+            "primaryType": "Open(Top-Four)",
+            "primaryDate": "Aug 16th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arkansas",
+            "primaryType": "Open",
+            "primaryDate": "May 24th",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "Arizona",
+            "primaryType": "Semi-closed",
+            "primaryDate": "April 4",
+            "consequence": "10%",
+            "decided": "83%"
+        },
+        {
+            "state": "California",
+            "primaryType": "Open",
+            "primaryDate": "June 7th",
+            "consequence": "10%",
+            "decided": "83%"
+        }
+    ]
+}
