@@ -1,0 +1,74 @@
+{
+    "votersTableData": [
+        {
+            "state": "District 1",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 2",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 3",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 4",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 5",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 6",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 7",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 8",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 9",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        },
+        {
+            "state": "District 10",
+            "vap": "TBD",
+            "Candidates": "TBD",
+            "tbd": "10%",
+            "tbd2": "83%"
+        }
+    ]
+}
